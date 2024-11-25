@@ -1,4 +1,4 @@
-name: Install Winget + dependencies
+name: Install Winget
 
 on:
   push:
