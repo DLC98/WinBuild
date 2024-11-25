@@ -1,1 +1,23 @@
+name: Install Winget + dependencies
+
+on:
+  push:
+    branches:
+      - feature-Winget+Dependencies
+  
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify PS versioning
+        shell: pwsh
+        run: pwsh --version
+
+      - name: PS gallery source
+        shell: pwsh
+        run: Get-PackageSource
 
