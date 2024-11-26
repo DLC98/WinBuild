@@ -1,4 +1,5 @@
 name: Install Winget + dependencies
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on:
   push:
